@@ -11,16 +11,16 @@
   <div class="page">
     <header class="header">
         <div class="header__logo">
-            <img class="header__logo_position"src="/images/logo_place_header.svg" alt="">
+            <img class="header__logo_position"src="/images/logo_place_header.svg" alt=""> <!--  {атрибут alt не должен быть пустой и преучайся в атрибут alt писать что-то осознанное уже} -->
         </div>
         <div class="header__title">
-            <h1 class="header__title_text title">Научиться учиться</h1>
+           <h1 class="header__title_text title">Научиться учиться</h1> <!-- { вот тут правильно что ты использовал h1, но мы можем использовать его только один раз на странице, чтобы был правильный SEO, поэтому в других местах нужно исправить} -->
         </div>
         <div class="header__title-comment">
             Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class='header__title-comment_link'href="#">Узнать</a>
         </div>
         <div class="header__pic">
-            <img class="header__pic_size"src="images/two_again.png" alt="#">
+            <img class="header__pic_size"src="images/two_again.png" alt="#"> <!--  {преучайся в атрибут alt писать что-то осознанное уже} -->
         </div>
         <div class="header__square-pic">
 
@@ -28,23 +28,23 @@
     </header>
     <main class="content">
       <section class="description">
-        <div class="two-colums">
-          <div class="two-colums_brief">
+        <div class="two-colums"> <!--  {слово колонны пишется вот так - columns} -->
+          <div class="two-colums_brief"> <!--  {почему two-colums_brief у тебя через одно нижнее подчеркивание, это же элемент, а не модификатор } -->
               <h3 class="brief">Главные проблемы в обучение</h3>
           </div>
-          <div class="two-colums_main-text">
-            <div class="two-colums_paragraph">
+          <div class="two-colums_main-text"> <!--  {почему two-colums_main-text у тебя через одно нижнее подчеркивание, это же элемент, а не модификатор } -->
+            <div class="two-colums_paragraph"> <!--  {почему two-colums_paragraph у тебя через одно нижнее подчеркивание, это же элемент, а не модификатор | также какой смысл носит div two-colums_paragraph} -->
               <p class="p-text">Ни в школе, ни в институте нас не учат тому, как правильно изучать материал.Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.</p>
               <p class="p-text p-text_coclusion"><span class="conclusion">Вывод: </span>Пытаться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?</p>
-              <p class="p-text">Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
+              <p class="p-text">Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p> <!-- {что то p-text очень странное название для клсса, думаю как ракз нужно было назвать two-colums_paragraph} -->
             </div>
           </div>
         </div>
       </section>
 
       <section class="digits">
-        <div class="section-title">
-            <h1 class="title title-digits">Цифры и факты</h1>
+        <div class="section-title"> <!--  {не очень понимаю зачем в ЯП говорят сделать этот блок у которого нет стилей, так то по хорошему если делается тег section, то у него на уровень ниже сразу должен идти заголовок, такая же тема в секии description, но опустим это} -->
+            <h1 class="title title-digits">Цифры и факты</h1> <!--  {вот в таких местах нужно поменять h1 на h2 } -->
         </div>
         <div class="section-subtitles">
             <h2 class="section-subtitle section-subtitle-digits">Про учебу и мозг</h2>
@@ -125,6 +125,7 @@
           </div>
         </div>
       </section>
+        <!--  {вот в этой секкции digits у тебя правильный нейминг классов, не знаю почему у тебя в description всё на модификаторах, а не на элементах} -->
 
       <section class="feynman">
         <div class="feynman__title">
@@ -142,7 +143,7 @@
 
       <section class="kaufman">
 
-
+<!--  {вот за такие пробелы между строками ты на работе по башке бы получил} -->
         <div class="section-title">
           <h1 class="title title-digits title-digits_theme_dark">Принципы обучения</h1>
       </div>
@@ -160,7 +161,7 @@
           </div>
         </div>
 
-
+<!--  {вот за такие пробелы между строками ты на работе по башке бы получил} -->
 
       <div class="table__cell table__cell_theme_dark">
           <div class="table__heading table__heading_theme_dark">
@@ -171,7 +172,7 @@
           </div>
       </div>
 
-
+<!--  {вот за такие пробелы между строками ты на работе по башке бы получил} -->
         <div class="table__cell table__cell_theme_dark">
           <div class="table__heading table__heading_theme_dark">
               3
@@ -181,7 +182,7 @@
           </div>
         </div>
 
-
+<!--  {вот за такие пробелы между строками ты на работе по башке бы получил} -->
 
         <div class="table__cell table__cell_theme_dark">
           <div class="table__heading table__heading_theme_dark">
@@ -192,7 +193,7 @@
           </div>
         </div>
 
-
+<!--  {вот за такие пробелы между строками ты на работе по башке бы получил} -->
 
         <div class="table__cell table__cell_theme_dark">
           <div class="table__heading table__heading_theme_dark">
@@ -203,7 +204,7 @@
           </div>
         </div>
 
-
+<!--  {вот за такие пробелы между строками ты на работе по башке бы получил} -->
 
         <div class="table__cell table__cell_theme_dark">
           <div class="table__heading table__heading_theme_dark">
@@ -214,7 +215,7 @@
           </div>
         </div>
 
-
+<!--  {вот за такие пробелы между строками ты на работе по башке бы получил} -->
 
         <div class="table__cell table__cell_theme_dark">
           <div class="table__heading table__heading_theme_dark">
@@ -225,7 +226,7 @@
           </div>
         </div>
 
-
+<!--  {вот за такие пробелы между строками ты на работе по башке бы получил} -->
 
         <div class="table__cell table__cell_theme_dark">
           <div class="table__heading table__heading_theme_dark">
@@ -236,7 +237,7 @@
           </div>
         </div>
 
-
+<!--  {вот за такие пробелы между строками ты на работе по башке бы получил} -->
 
         <div class="table__cell table__cell_theme_dark">
           <div class="table__heading table__heading_theme_dark">
@@ -247,7 +248,7 @@
           </div>
         </div>
 
-
+<!--  {вот за такие пробелы между строками ты на работе по башке бы получил} -->
 
         <div class="table__cell table__cell_theme_dark">
           <div class="table__heading table__heading_theme_dark">
@@ -259,17 +260,17 @@
         </div>
       </div>
       <div class="kaufman__triangle">
-        <img src="images/kaufman-triangle.svg" alt="#">
+        <img src="images/kaufman-triangle.svg" alt="#"> <!--  {преучайся в атрибут alt писать что-то осознанное уже} -->
       </div>
 
-
+<!--  {ты растянул файл на 40 строк на ровном месте просто} -->
       </section>
     </main>
     <footer class="footer">
         <div class="footer__colums">
           <div class="footer__column_content_copyright">
             <div class="footer__logo">
-              <img src="/images/logo_place_footer.svg" alt="">
+              <img src="/images/logo_place_footer.svg" alt=""> <!--  {атрибут alt не должен быть пустой и преучайся в атрибут alt писать что-то осознанное уже} -->
             </div>
             <div class="footer__author">
               &copy Виктор Абанькин
