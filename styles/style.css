@@ -33,7 +33,7 @@ ul{
   position: absolute;
   top: 30px;
   left: 64px;
-}
+ } /* logo у тебя должен быть блок, а не элемент, ты должен ему задать общие параметры чтобы в хэдере и в футере он был одинаков, к примеру ширина и высота, затем создать модификаторы для хэдера и футера со стилями которые будут применяться исходя из того где logo расположено */
 .header__title{
   width: 730px;
   margin-left: 64px;
@@ -47,13 +47,14 @@ ul{
   position: absolute;
   bottom: 30px;
 }
+
 .header__title-comment_link::after{
   content: '→';
   position: absolute;
   top: 84%;
   left: 33%;
   transform: translateY(-50%);
-}
+} /* перемудрил с этим классом, можно просто после слова "узнать" написать &rarr; и у тебя появится эта стрелочка, соответсвенно от класса можно будет избавиться */
 
 .header__pic img{
   width: 765px;
@@ -81,7 +82,7 @@ ul{
 } */
 .description{
   display: flex;
-  flex-direction: row;
+  flex-direction: row;  /* когда ты задаешь display:flex , то flex-direction: row применяется по дефолту, это свойство бесполезно здесь  */
   justify-content: center;
 
 }
@@ -97,7 +98,7 @@ ul{
 }
 .brief{
   color: #2f80ed;
-  line-height: 1.2;
+  line-height: 1.2; /* не сказал бы что это свойство на что то влияет, но пусть будет ладно  */
   font-size: 18px;
   font-weight: normal;
   margin: 0;
@@ -105,8 +106,8 @@ ul{
 .two-colums_main-text{
   width: 784px;
 }
-.p-text{
-  line-height: 34px;
+.p-text{ /* плохой нейминг, если бы я не зашел в проект, то вообще бы не понял что это и где используется  */
+  line-height: 34px; /* в прошлом классе ты для этого класса использовал просто цифры, а тут px, нужно использовать единную систему исчисления, пойми какую систему исчелений хочешь использовать и поправь во всем проекте */
   font-size: 24px;
   font-weight: normal;
 }
@@ -127,18 +128,18 @@ ul{
 }
 
 .section-title{
-  /* width: 45%; */
+  /* width: 45%; */ /* зачем здесь этот класс если он пустой */
 }
 .title{
   font-weight: 600;
-  line-height: 1.15;
+  line-height: 1.15; 
   margin: 0;
 }
 .title-digits{
   font-size: 60px;
 }
 .section-subtitle{
-  line-height: 34px;
+  line-height: 34px; 
   font-weight: normal;
 }
 .section-subtitle-digits{
@@ -148,14 +149,14 @@ ul{
 .table{
   width: 1100px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row;  /* когда ты задаешь display:flex , то flex-direction: row применяется по дефолту, это свойство бесполезно здесь  */
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto 100px;
 }
 .table__cell{
   width: 250px;
-  margin: 60px 0px 60px 0px;
+  margin: 60px 0px 60px 0px; /* можно написать так - margin: 60px 0px;  если противоположные стороны одинаковы то необязательно их писать*/
 }
 .table__heading{
   font-size: 24px;
@@ -174,7 +175,7 @@ ul{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(/images/feynman.png);
+  background-image: url(/images/feynman.png); /* советую посмотреть материал про абсолютные и относительные пути, пока у тебя один файл только всё хорошо, но когда их будет много и они будут лежать по разным папкам, то могут возникнуть проблемы */
   background-repeat: no-repeat;
   background-position: bottom left ; /* чтобы изображение было центрировано */
   height: 867px;
@@ -212,7 +213,7 @@ ul{
   position: absolute;
   top: 51%;
   left: 109%;
-  transform: translateY(-50%);}
+  transform: translateY(-50%);} /* перемудрил с этим классом, можно просто после слова "Подробнее" написать &rarr; и у тебя появится эта стрелочка, соответсвенно от класса можно будет избавиться */
 
 .kaufman{
   display: flex;
@@ -250,7 +251,7 @@ ul{
   display: flex;
   width: 90%;
   /* flex-basis: 711px; */
-  flex-direction: row;
+  flex-direction: row; /* когда ты задаешь display:flex , то flex-direction: row применяется по дефолту, это свойство бесполезно здесь  */
   justify-content: space-between;
 }
 .footer__author{
@@ -277,7 +278,7 @@ ul{
 }
 .footer__column_info_links{
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* когда ты задаешь display:flex , то flex-direction: row применяется по дефолту, это свойство бесполезно здесь  */
   justify-content: space-around;
   align-items: center;
   width: 50%;
@@ -286,7 +287,7 @@ ul{
   padding-left: 20px;
 }
 
-.yt , .vk , .tt{
+.yt , .vk , .tt{  /* вот с этими классами и ниже перемудрил, можно просто в html сделать так, тогда не придется ничего абсолютом задавать, можешь посмотреть как я сделал (ссылка в самом низу)  <a><img src='123 alt='123 />Однокласскини</a>  */
   position: relative;
 }
 
@@ -308,3 +309,5 @@ ul{
   left: -1px;
   transform: translateY(5%);
 }
+/* Делай одинаковые пробедмы между классами для придания общего вида файлу */
+/* https://practicum.yandex.ru/learn/web/courses/dbf98e55-0f76-444b-850c-4538708ad571/sprints/40096/topics/48e73e05-2220-44e2-b176-35af868a365f/lessons/792ecfb8-db7c-4c93-8fa1-cf0fad50c66b/ */
